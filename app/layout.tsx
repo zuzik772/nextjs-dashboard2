@@ -8,6 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="apple:content_id" content="835599320" />
+      </head>
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );

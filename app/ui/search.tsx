@@ -3,11 +3,15 @@
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { useSearchParams, usePathname, useRouter } from "next/navigation";
 import { useDebouncedCallback } from "use-debounce";
+import { detectPlatform } from "../lib/utils";
 
 export default function Search({ placeholder }: { placeholder: string }) {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
+
+  const detectedPlatform = detectPlatform();
+  alert(detectedPlatform);
   //<Search> is a Client Component, so you used the useSearchParams() hook to access the params from the client.
   //As a general rule, if you want to read the params from the client, use the useSearchParams() hook as this avoids having to go back to the server.
 

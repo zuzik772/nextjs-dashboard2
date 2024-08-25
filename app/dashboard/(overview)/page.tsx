@@ -8,6 +8,7 @@ import {
   LatestInvoicesSkeleton,
   CardsSkeleton,
 } from "@/app/ui/skeletons";
+import { detectPlatform } from "@/app/lib/utils";
 
 export default async function Page() {
   return (
