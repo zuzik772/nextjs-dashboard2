@@ -1,3 +1,4 @@
+"use client";
 import { detectPlatform } from "@/app/lib/utils";
 import Image from "next/image";
 import React from "react";
@@ -31,10 +32,6 @@ const SmartAppBanner = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="path/to/android-banner-image.png"
-              alt="Get it on Google Play"
-            />
             test android
           </a>
         </div>
